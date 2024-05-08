@@ -1,0 +1,18 @@
+.header-wrapper {
+  height: 73px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #883a3a;
+  position: fixed;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+}
+
+.header-wrapper h1 {
+  margin-block: 0;
+}
