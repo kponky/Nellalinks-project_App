@@ -2,8 +2,9 @@ import React from 'react'
 
 const HelpOther = () => {
   return (
-    <div>
-      this is the help page
+    <div className=' home-wrapper'>
+    <h1>Menu</h1>
+
     </div>
   )
 }

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className='header-wrapper'>
     <div className="logo"></div>
-      <h1>Nellalink Buine</h1>
+      <h1>Nellalink Buiness</h1>
     </div>
   )
 }

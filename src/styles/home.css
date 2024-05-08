@@ -1,0 +1,12 @@
+.home-container{
+  padding-top: 60px;
+  padding-inline: 24px;
+}
+
+.home-container .menu h1{
+  padding-block: 20px;
+  color: #1f1f1f;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}

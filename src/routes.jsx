@@ -10,7 +10,7 @@ const AppRoutes = () => {
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route index element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/cart" element={<Cart/>}/>
           <Route path = '/help-other' element={<HelpOther/>}/>
         </Route>

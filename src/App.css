@@ -6,3 +6,24 @@
   font-family: "Inter", sans-serif;
 }
 
+.btn{
+  width: 100px;
+  height: 37px;
+  color: #1f1f1f;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.btn:hover{
+ background: #1f1f1f;
+ color: #fff;
+}
+
+
