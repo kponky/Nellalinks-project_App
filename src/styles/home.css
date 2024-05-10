@@ -1,12 +1,113 @@
-.home-container{
+.home-container {
   padding-top: 60px;
   padding-inline: 24px;
+  width: 100%;
+  height: 100%;
 }
 
-.home-container .menu h1{
+.home-container .menu h1 {
   padding-block: 20px;
   color: #1f1f1f;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
 }
+
+.home-container img {
+  width: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.home-container .home-content_img {
+  border-radius: 15px;
+  width: 200px;
+  height: 130px;
+}
+
+.home-container .home-content .contents {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  width: 100%;
+  padding-block: 20px;
+  margin-block: 20px;
+  border-radius: 12px;
+  padding-inline: 24px;
+}
+
+.home-container .home-content .home-content-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container .home-content .contents span {
+  background-color: #1f1f1f;
+  padding: 6px;
+  color: #fff;
+  border-radius: 15px;
+  width: 130px;
+  /* height: 28px; */
+}
+
+.home-container .home-content .contents h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f1f1f;
+  padding-block: 8px;
+}
+
+.home-container .home-content .contents p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8C8C8C;
+}
+
+.home-container .home-content .contents .price-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 10px;
+}
+
+.home-container .home-content .contents .price-btn p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1f1f1f;
+}
+
+
+.home-container .home-content .contents .price-btn button{
+  border: none;
+  background: transparent;
+  }
+
+  .home-container .home-content .contents .price-btn button .icon {
+    font-size: 18px;
+    position: relative;
+
+    
+  }
+  
+  .home-container .home-content .contents .price-btn button .icon::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Set background color to white */
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .home-container .home-content .contents .price-btn button .icon svg path {
+    fill: black; /* Set fill color of the plus sign to black */
+  }
+
+  
