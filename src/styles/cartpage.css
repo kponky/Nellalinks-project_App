@@ -1,7 +1,9 @@
 .cart-page {
   width: 100%;
+  height: 100vh;
   padding-block: 100px;
   padding-inline: 20px;
+  margin-bottom: 200px;
 
 }
 
@@ -49,6 +51,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.cart-page .cart-item .title-delete button{
+  background: transparent;
+  border: none;
 }
 
 

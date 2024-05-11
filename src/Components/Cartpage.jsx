@@ -3,7 +3,8 @@ import { useCart } from "../context/CartContext";
 import "../styles/cartpage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
-import trash from '../assets/bin.png'
+import trash from "../assets/bin.png";
+import Checkout from "./Checkout";
 
 const Cartpage = () => {
   const { cart, total, increaseQuantity, decreaseQuantity, removeFromCart } =
@@ -16,9 +17,10 @@ const Cartpage = () => {
   return (
     <div className="cart-page" id="cart">
       <div className="cart-header">
-       <div className="itemNo"> 
-       <h1>Cart</h1>
-       <span>{totalItems} items</span></div>
+        <div className="itemNo">
+          <h1>Cart</h1>
+          <span>{totalItems} items</span>
+        </div>
         <div className="line"></div>
       </div>
       {cart.map((item) => (
@@ -28,7 +30,9 @@ const Cartpage = () => {
             <div className="cart-contents">
               <div className="title-delete">
                 <h2>{item.title}</h2>
-                <img src= {trash} alt="" className="bin" />
+                <button onClick={() => removeFromCart(item.id)}>
+                  <img src={trash} alt="" className="bin" />
+                </button>
               </div>
 
               <p>{item.desc}</p>
@@ -50,6 +54,10 @@ const Cartpage = () => {
           </div>
         </div>
       ))}
+
+    <div>
+    <Checkout/>
+    </div>
     </div>
   );
 };
