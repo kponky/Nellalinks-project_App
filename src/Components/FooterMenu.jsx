@@ -20,11 +20,11 @@ const FooterMenu = () => {
       </div>
       <div className="footer-links">
         <Link to="/cart">
-          <button>
+          <div>
             <FontAwesomeIcon icon={faCartShopping} className="icon" />
             {cart.length > 0 && <span className="badge">{cart.length}</span>}
             <p>Cart</p>
-          </button>
+          </div>
         </Link>
       </div>
       <div className="footer-links">
