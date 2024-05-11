@@ -1,47 +1,36 @@
 import React, { useState } from "react";
-import "../styles/home.css";
+import ItemCard from "../Components/ItemCard";
 import Search from "../Components/Search";
 import Tabs from "../Components/Tabs";
 import { menuData } from "../data/menuData";
-import { FaPlusCircle } from "react-icons/fa";
-import plusImg from "../assets/faplus.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import { faPlusCircle } from "@fortawesome/free-solid-svg-icons/faPlusCircle";
-import { useCart } from "../context/CartContext";
-import { useParams } from "react-router-dom";
+import "../styles/home.css";
 
 const Home = () => {
-  const {addToCart} = useCart()
-  const {id} = useParams();
-  const item = menuData.find((data) => data.id === id);
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const categories = ["All", ...new Set(menuData.map((item) => item.category))];
+
+  const filteredItems = menuData.filter((item) => {
+    return (
+      (selectedCategory === "All" || item.category === selectedCategory) &&
+      (searchTerm === "" ||
+        item.title.toLowerCase().includes(searchTerm.toLowerCase()))
+    );
+  });
+
   return (
     <div className="home-container">
-
       <div className="menu">
         <h1>Menu</h1>
       </div>
-      <Tabs />
-      <Search />
+      <Tabs categories={categories} setSelectedCategory={setSelectedCategory} />
+      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+
       {/* items list*/}
       <div className="home-content">
-        {menuData.map((item, i) => (
-          <div key={i} className="contents">
-            <div className="home-content_img">
-              <img src={item.image} alt={item.title} className="itemImg" />
-            </div>
-            <div className="home-content-desc">
-              {item.recomm && <span>Recommended </span>}
-              <h4>{item.title}</h4>
-              <p>{item.desc}</p>
-              <div className="price-btn">
-                <p>{item.price}</p>
-                <button className="btn" onClick={()=> addToCart(item, item.id)}>
-                  <FontAwesomeIcon icon={faPlus} className="icon" />
-                </button>
-              </div>
-            </div>
-          </div>
+        {filteredItems.map((item) => (
+          <ItemCard key={item.id} item={item} />
         ))}
       </div>
     </div>

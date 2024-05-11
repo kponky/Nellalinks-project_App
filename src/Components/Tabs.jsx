@@ -1,15 +1,20 @@
-import React from 'react'
-import '../styles/tabs.css'
+import React from "react";
+import "../styles/tabs.css";
 
-const Tabs = () => {
+const Tabs = ({categories, setSelectedCategory}) => {
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
-    <div className='tabs-container'>
-    <button className='btn'>All</button>
-    <button className='btn'>Burger</button>
-    <button className='btn'>Cocktail</button>
-    <button className='btn'>Doughnuts</button> 
+    <div className="tabs-container">
+      {categories.map((category, index) => (
+        <button key={index} onClick={() => handleCategoryChange(category)}>
+          {category}
+        </button>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Tabs
+export default Tabs;
