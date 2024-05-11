@@ -29,8 +29,21 @@
   
 }
 
+.footer-wrapper .footer-links button {
+  border: none;
+  background: transparent;
+}
+
+.footer-wrapper .footer-links button p{
+  font-size: 18px;
+  color: #8C8C8C;
+}
+
 .footer-wrapper .footer-links .icon{
   font-size: 18px;
+  color: #8C8C8C;
+  padding-block: 5px;
+
 }
 
 .footer-wrapper .footer-links .badge{
@@ -44,7 +57,7 @@ top: -10px;
     height: 20px;
     width: 20px;
     left: 20px;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     align-content: center;
 

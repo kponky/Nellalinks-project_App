@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useCart } from "../context/CartContext";
 
-const FooterMenu = ({ openCart, setOpenCart }) => {
+const FooterMenu = () => {
   const { cart } = useCart();
 
   return (
@@ -19,14 +19,13 @@ const FooterMenu = ({ openCart, setOpenCart }) => {
         </Link>
       </div>
       <div className="footer-links">
-        <button
-          onClick={() => setOpenCart(!openCart)}
-          className={openCart ? "active-btn" : ""}
-        >
-          <FontAwesomeIcon icon={faCartShopping} className="icon" />
-          {cart.length > 0 && <span className="badge">{cart.length}</span>}
-          <p>Cart</p>
-        </button>
+        <Link to="/cart">
+          <button>
+            <FontAwesomeIcon icon={faCartShopping} className="icon" />
+            {cart.length > 0 && <span className="badge">{cart.length}</span>}
+            <p>Cart</p>
+          </button>
+        </Link>
       </div>
       <div className="footer-links">
         <Link to="/">
@@ -39,3 +38,12 @@ const FooterMenu = ({ openCart, setOpenCart }) => {
 };
 
 export default FooterMenu;
+
+// <button
+// onClick={() => setOpenCart(!openCart)}
+// className={openCart ? "active-btn" : ""}
+// >
+// <FontAwesomeIcon icon={faCartShopping} className="icon" />
+// {cart.length > 0 && <span className="badge">{cart.length}</span>}
+// <p>Cart</p>
+// </button>
