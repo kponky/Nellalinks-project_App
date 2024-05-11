@@ -6,6 +6,11 @@ import cocktail1 from "../assets/empressson martini.png";
 import cocktail2 from "../assets/negroni.png";
 import cocktail3 from "../assets/brandy crusta.png";
 import cocktail4 from  "../assets/dry martini.png";
+import donuts1 from "../assets/Maple_Bars_720x.jpg"
+import donuts2 from "../assets/jelly donut.jpg"
+import donuts3 from "../assets/milky donuts.jpeg"
+import donuts4 from "../assets/Glazed-Donutsjpg.jpg"
+
 
 export const menuData= [
   {
@@ -15,7 +20,7 @@ export const menuData= [
     desc: "Smoked Brisket Sandwich, featuring Brisket",
     price: "N280,000",
     recomm: true,
-    category: "burger",
+    category: "Burger",
   },
   {
     id: "2",
@@ -24,7 +29,7 @@ export const menuData= [
     desc: "Smoked Brisket Sandwich, featuring tender brisket",
     price: "N280,000",
     recomm: true,
-    category: "burger",
+    category: "Burger",
   },
   {
     id: "3",
@@ -33,7 +38,7 @@ export const menuData= [
     desc: "Smoked Brisket Sandwich, featuring tender brisket",
     price: "280,000",
     recomm: true,
-    category: 'burger',
+    category: 'Burger',
   },
   {
     id: "4",
@@ -42,7 +47,7 @@ export const menuData= [
     desc: "Smoked Brisket Sandwich, featuring tender brisket",
     price: "N280,000",
     recomm: true,
-    category: 'burger'
+    category: 'Burger'
   },
   {
     id: "5",
@@ -51,7 +56,7 @@ export const menuData= [
     desc: "Smoked Brisket Sandwich, featuring tender brisket",
     price: "N280,000",
     recomm: true,
-    category: 'cocktail'
+    category: 'Cocktail'
   },
   {
     id: "6",
@@ -60,7 +65,7 @@ export const menuData= [
     desc: "Smoked Brisket Sandwich, featuring tender brisket",
     price: "N280,000",
     recomm: true,
-    category: 'burger'
+    category: 'Cocktail'
   },
  
   {
@@ -70,7 +75,7 @@ export const menuData= [
     desc: "Smoked Brisket Sandwich, featuring tender brisket",
     price: "N280,000",
     recomm: true,
-    category: 'cocktail'
+    category: 'Cocktail'
   },
   {
     id: "8",
@@ -79,7 +84,43 @@ export const menuData= [
     desc: "Smoked Brisket Sandwich, featuring tender brisket",
     price: "N280,000",
     recomm: true,
-    category: 'cocktail'
+    category: 'Cocktail'
+  },
+  {
+    id: "9",
+    image: donuts1,
+    title: "Maple Bacon Donut",
+    desc: " A unique combination of sweet and savory flavors, this donut features a maple glaze topped with crispy bacon bits. ",
+    price: "N280,000",
+    recomm: true,
+    category: 'Donut'
+  },
+  {
+    id: "10",
+    image: donuts2,
+    title: "Jelly-filled Donut",
+    desc: "pastry is filled with a sweet fruit jelly, typically raspberry or strawberry.",
+    price: "N280,000",
+    recomm: true,
+    category: 'Donut'
+  },
+  {
+    id: "11",
+    image: donuts3,
+    title: "Milky Donuts",
+    desc: ". Each bite offers a smooth and comforting taste, reminiscent of a creamy milkshake or a sweet dairy treat.",
+    price: "N280,000",
+    recomm: true,
+    category: 'Donut'
+  },
+  {
+    id: "12",
+    image: donuts4,
+    title: "Glazed Donut",
+    desc: " A classic donut with a smooth, sweet glaze covering its fluffy interior.",
+    price: "N280,000",
+    recomm: true,
+    category: 'Donut'
   },
 ];
 

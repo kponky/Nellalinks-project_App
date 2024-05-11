@@ -35,7 +35,7 @@
   padding-block: 20px;
   margin-block: 20px;
   border-radius: 12px;
-  padding-inline: 24px;
+  padding-inline: 20px;
   margin-bottom: 40px;
 }
 
@@ -105,6 +105,9 @@
         background: black;
         color: white;
       }
+
+
+      
   
   /* .home-container .home-content .contents .price-btn button .icon::before {
     content: "";
