@@ -52,7 +52,7 @@ const CartItem = ({ item }) => {
                 className="quantity-btn"
                 onClick={() => handleDecrement(item.id)}
               >
-                <FontAwesomeIcon icon={faPlus} />
+                <FontAwesomeIcon icon={faPlus}  className="icon"/>
               </button>
             </div>
           </div>
