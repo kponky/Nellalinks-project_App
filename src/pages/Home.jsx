@@ -24,7 +24,7 @@ const Home = () => {
       <div className="menu">
         <h1>Menu</h1>
       </div>
-      <Tabs categories={categories} setSelectedCategory={setSelectedCategory} />
+      <Tabs  categories={categories} setSelectedCategory={setSelectedCategory} />
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
       {/* items list*/}

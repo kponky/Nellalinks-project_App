@@ -5,7 +5,6 @@
 
 }
 
-.tabs-container button:nth-child(4){
-  width: 120px;
-  
+.tabs-container #btn:nth-child(4){
+  width: 130px;
 }

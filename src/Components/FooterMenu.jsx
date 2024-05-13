@@ -14,7 +14,7 @@ const FooterMenu = () => {
     <div className="footer-wrapper">
       <div className="footer-links">
         <Link to="/">
-          <img src={homeIcon} alt="" />
+          <img src={homeIcon} alt=""  className="footerIcon"/>
           <p>Home</p>
         </Link>
       </div>
@@ -29,7 +29,7 @@ const FooterMenu = () => {
       </div>
       <div className="footer-links">
         <Link to="/">
-          <img src={helpOtherIcon} alt="" />
+          <img src={helpOtherIcon} alt="" className="footerIcon" />
           <p>Help/Other</p>
         </Link>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/tabs.css";
 
-const Tabs = ({categories, setSelectedCategory}) => {
+const Tabs = ({ categories, selectedCategory, setSelectedCategory }) => {
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
@@ -9,7 +9,12 @@ const Tabs = ({categories, setSelectedCategory}) => {
   return (
     <div className="tabs-container">
       {categories.map((category, index) => (
-        <button key={index} onClick={() => handleCategoryChange(category)}>
+        <button
+        className={selectedCategory === category ? "active" : ""}
+          key={index}
+          id="btn"
+          onClick={() => handleCategoryChange(category)}
+        >
           {category}
         </button>
       ))}

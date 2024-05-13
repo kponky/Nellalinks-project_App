@@ -2,6 +2,7 @@ import React from "react";
 import { useCart } from "../context/CartContext";
 import "../styles/cartpage.css";
 import CartItem from "../Components/CartItem";
+import Checkout from "../Components/Checkout";
 
 const Cart = () => {
   const { cart } = useCart();
@@ -23,6 +24,8 @@ const Cart = () => {
       {cart.map((item) => (
         <CartItem key={item.id} item={item} />
       ))}
+
+      <Checkout/>
     </div>
   );
 };

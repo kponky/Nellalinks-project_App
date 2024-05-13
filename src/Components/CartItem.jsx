@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
 import trash from "../assets/bin.png";
 import { useCart } from "../context/CartContext";
+import Checkout from "./Checkout";
 
 const CartItem = ({ item }) => {
   const { increaseQuantity, decreaseQuantity, removeFromCart } = useCart();
@@ -42,6 +43,8 @@ const CartItem = ({ item }) => {
           </div>
         </div>
       </div>
+
+     
     </div>
   );
 };
