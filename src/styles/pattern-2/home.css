@@ -1,6 +1,6 @@
 .menu2-container {
   padding-top: 60px;
-  padding-inline: 24px;
+  /* padding-inline: 24px; */
   width: 100%;
   height: 100%;
   margin-bottom: 100px;
@@ -9,11 +9,11 @@
 .menu2-container .menu2-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 40px;
 }
 
 .menu2-container .menu2-img {
-  width: 392px;
+  max-width: 500px;
   height: 304px;
-  object-fit: contain;
 }

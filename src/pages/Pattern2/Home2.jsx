@@ -2,11 +2,14 @@ import React from 'react'
 import pizzaImg from '../../assets/pizza.png'
 import Search from '../../Components/Search'
 import '../../styles/pattern-2/home.css'
+import { Link } from 'react-router-dom'
 
 const Home2 = () => {
   return (
     <div className='menu2-container'>
-    <div className='menu2-content '>
+   <Link to = "/pattern-2">
+   
+   <div className='menu2-content '>
     <div className='menu2-img'>
     <img src= {pizzaImg} alt="" />
     </div>
@@ -14,6 +17,7 @@ const Home2 = () => {
     </div>
 
     <Search/>
+   </Link>
 
     </div>
   )

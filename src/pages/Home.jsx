@@ -4,6 +4,7 @@ import Search from "../Components/Search";
 import Tabs from "../Components/Tabs";
 import { menuData } from "../data/menuData";
 import "../styles/home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -21,18 +22,23 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div className="menu">
-        <h1>Menu</h1>
-      </div>
-      <Tabs  categories={categories} setSelectedCategory={setSelectedCategory} />
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Link to="/pattern-1">
+        <div className="menu">
+          <h1>Menu</h1>
+        </div>
+        <Tabs
+          categories={categories}
+          setSelectedCategory={setSelectedCategory}
+        />
+        <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
-      {/* items list*/}
-      <div className="home-content">
-        {filteredItems.map((item) => (
-          <ItemCard key={item.id} item={item} />
-        ))}
-      </div>
+        {/* items list*/}
+        <div className="home-content">
+          {filteredItems.map((item) => (
+            <ItemCard key={item.id} item={item} />
+          ))}
+        </div>
+      </Link>
     </div>
   );
 };

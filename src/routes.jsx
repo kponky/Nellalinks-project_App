@@ -14,7 +14,7 @@ const AppRoutes = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Pattern1Layout />}>
-          <Route index element={<Home />} />
+          <Route path="pattern-1" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/help-other" element={<HelpOther />} />
         </Route>
