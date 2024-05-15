@@ -1,0 +1,25 @@
+.burrito-card-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  
+}
+.burrito-card-container .bcc-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.burrito-card-container .bcc-heading button{
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.burrito-card-container .line{
+  height: 2px;
+  background: #7F8288;
+  margin-top: 10px;
+}
+

@@ -1,0 +1,25 @@
+.Donut-card-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  
+}
+.Donut-card-container .dcc-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.Donut-card-container .dcc-heading button{
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.Donut-card-container .line{
+  height: 2px;
+  background: #7F8288;
+  margin-top: 10px;
+}
+

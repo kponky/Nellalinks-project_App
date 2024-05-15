@@ -1,0 +1,50 @@
+.burger-card-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  
+}
+.burger-card-container .bcc-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.burger-card-container .bcc-heading button{
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.burger-card-container .line{
+  height: 2px;
+background: #7F8288;
+  margin-top: 10px;
+}
+
+.item-open{
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  height: 100%;
+
+
+
+}
+
+.item-open .burger-item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;  
+  width: 100%;
+  padding-block: 20px;
+  margin-block: 20px;
+  border-radius: 12px;
+  padding-inline: 20px;
+  margin-bottom: 40px; 
+  margin-inline: 30px; 
+}

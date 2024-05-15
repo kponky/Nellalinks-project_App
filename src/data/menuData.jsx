@@ -12,6 +12,7 @@ import donuts3 from "../assets/milky donuts.jpeg"
 import donuts4 from "../assets/Glazed-Donutsjpg.jpg"
 
 
+
 export const menuData= [
   {
     id: "1",
@@ -122,6 +123,7 @@ export const menuData= [
     recomm: true,
     category: 'Donut'
   },
+  
 ];
 
 

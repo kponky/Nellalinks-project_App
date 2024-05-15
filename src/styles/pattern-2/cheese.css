@@ -1,0 +1,25 @@
+.cheese-card-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  
+}
+.cheese-card-container .cheese-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.cheese-card-container .cheese-heading button{
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.cheese-card-container .line{
+  height: 2px;
+  background: #7F8288;
+  margin-top: 10px;
+}
+

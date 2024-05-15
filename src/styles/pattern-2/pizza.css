@@ -1,0 +1,25 @@
+.pizza-card-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  
+}
+.pizza-card-container .pcc-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.pizza-card-container .pcc-heading button{
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.pizza-card-container .line{
+  height: 2px;
+  border: 1px solid #7F8288;
+  margin-top: 10px;
+}
+

@@ -8,8 +8,15 @@ import PizzaCard from "../../Components/PizzaCard";
 import DonutCard from "../../Components/DonutCard";
 import BurritoCard from "../../Components/BurritoCard";
 import CheeseCard from "../../Components/CheeseCard";
+import ItemCard from "../../Components/ItemCard";
+import { menuData2 } from "../../data/menuData2";
 
 const Home2 = () => {
+  const burgerItems = menuData2.filter((item) => item.category === "Burger");
+  const pizzaItems = menuData2.filter((item) => item.category === "Pizza");
+  const donutItems = menuData2.filter((item) => item.category === "Donut");
+  const cheeseItems = menuData2.filter((item) => item.category === "Cheese");
+
   return (
     <div className="menu2-container">
       <Link to="/pattern-2">
@@ -21,10 +28,10 @@ const Home2 = () => {
         </div>
         <div className="menu2-content">
           <Search />
-          <Burgercard />
-          <PizzaCard />
-          <DonutCard />
-          <BurritoCard />
+          <Burgercard menuItems={burgerItems}/>
+          <PizzaCard menuItems={pizzaItems}/>
+          <DonutCard  menuItems={donutItems}/>
+          <BurritoCard menuItems={cheeseItems}/>
           <CheeseCard/>
         </div>
       </Link>

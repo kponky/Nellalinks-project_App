@@ -4,6 +4,8 @@
   height: 100%;
   margin-bottom: 100px;
   font-family: "Lato", sans-serif;
+  position: relative;
+
 }
 
 .menu2-container .menu2-img img {
@@ -18,12 +20,12 @@
   height: 304px;
   position: relative;
 }
-.menu2-container .menu2-heading {
+/* .menu2-container .menu2-heading {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(50%, -50%);
+} */
 
 
 .menu2-container .menu2-img::before {
@@ -33,13 +35,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value (0.5) to change the darkness */
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 40px;
+
 }
 .menu2-container .menu2-heading h1{
 font-family: Lato;
 font-size: 40px;
 font-weight: 900;
-color: white;
+color: #fff;
+position: absolute;
+top: 24%;
+left: 30%;
+transform: translate(50%, -50%);
 }
 
 .menu2-container .menu2-content{
