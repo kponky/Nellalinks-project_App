@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { faChevronDown, faPlus } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../styles/pattern-2/burgercard.css';
+import React, { useState } from "react";
+import { faChevronDown, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../styles/pattern-2/burgercard.css";
 
 const Burgercard = ({ menuItems }) => {
   const [isOpen, setIsOpen] = useState(false); // Manage card expansion state
@@ -11,25 +11,27 @@ const Burgercard = ({ menuItems }) => {
   };
 
   return (
-    <div className='burger-card-container'>
+    <div className="burger-card-container">
       <div className="bcc-heading">
         <h1>Burger</h1>
         <button onClick={toggleBurgerCard}>
-          <FontAwesomeIcon icon={faChevronDown} className='icon' />
+          <FontAwesomeIcon icon={faChevronDown} className="icon" />
         </button>
       </div>
-      <div className='line'></div>
+      <div className="line"></div>
       {isOpen && (
-        <div className="item-open">
-          {menuItems.map((item) => ( 
-            <div key={item.id} className="burger-item">
+        <div className="carousel">
+          {menuItems.map((item) => (
+            <div key={item.id} className="caurosel-item">
               <img src={item.image} alt={item.title} className="burger-img" />
               <div className="burger-info">
                 <h4>{item.title}</h4>
                 <p>{item.desc}</p>
                 <div className="price-btn">
                   <p>{item.price}</p>
-                  <button className="btn"> <FontAwesomeIcon icon={faPlus}/></button>
+                  <button className="btn">
+                    <FontAwesomeIcon icon={faPlus} />
+                  </button>
                 </div>
               </div>
             </div>

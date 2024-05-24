@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <Link to="/pattern-1">
+      <Link to="/">
         <div className="menu">
           <h1>Menu</h1>
         </div>

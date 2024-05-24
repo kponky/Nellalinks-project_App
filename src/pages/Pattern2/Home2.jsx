@@ -10,12 +10,20 @@ import BurritoCard from "../../Components/BurritoCard";
 import CheeseCard from "../../Components/CheeseCard";
 import ItemCard from "../../Components/ItemCard";
 import { menuData2 } from "../../data/menuData2";
+import useFetch from "../../../useFetch";
 
 const Home2 = () => {
-  const burgerItems = menuData2.filter((item) => item.category === "Burger");
-  const pizzaItems = menuData2.filter((item) => item.category === "Pizza");
-  const donutItems = menuData2.filter((item) => item.category === "Donut");
-  const cheeseItems = menuData2.filter((item) => item.category === "Cheese");
+  const {data, loading, error} = useFetch("https://66500997ec9b4a4a6030791d.mockapi.io/nellalinks-projects-api/")
+
+  if (loading) return <p>Loading...</p>
+  if (error) return <p>Error: {error}</p>
+    
+  
+  const burgerItems = data.filter((items) => items.category === "Burger");
+  const pizzaItems = data.filter((items) => items.category === "Pizza");
+  const donutItems = data.filter((items) => items.category === "Donut");
+  const cheeseItems = data.filter((items) => items.category === "Cheese");
+  const burritoItems = data.filter((items) => items.category === "Burrito");
 
   return (
     <div className="menu2-container">
@@ -28,11 +36,11 @@ const Home2 = () => {
         </div>
         <div className="menu2-content">
           <Search />
-          <Burgercard menuItems={burgerItems}/>
-          <PizzaCard menuItems={pizzaItems}/>
-          <DonutCard  menuItems={donutItems}/>
-          <BurritoCard menuItems={cheeseItems}/>
-          <CheeseCard/>
+          <Burgercard menuItems={burgerItems} />
+          <PizzaCard menuItems={pizzaItems} />
+          <DonutCard menuItems={donutItems} />
+          <BurritoCard menuItems={burritoItems} />
+          <CheeseCard menuItems={cheeseItems} />
         </div>
       </Link>
     </div>

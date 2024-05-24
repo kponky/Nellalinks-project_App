@@ -14,6 +14,10 @@ import pizza1 from "../assets/Margherita pizza.jpeg"
 import pizza2 from "../assets/Hawaiian pizza.jpeg";
 import pizza3 from "../assets/BBQ Chicken pizza.jpeg"
 import pizza4 from "../assets/veggie supreme pizza.jpeg"
+import burrito1 from "../assets/Classic Beef Burrito.jpeg";
+import burrito2 from "../assets/Chicken Fajita Burrito.jpeg";
+import burrito3 from "../assets/Seafood Burrito.jpeg";
+import burrito4 from "../assets/Veggie Delight Burrito.jpeg";
 
 export const menuData2 = [
   {
@@ -162,4 +166,42 @@ export const menuData2 = [
     recomm: true,
     category: 'Pizza'
   },
+  {
+    id: "17",
+    image: burrito1,
+    title: "Classic Beef Burrito",
+    desc: "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+    price: "N280,000",
+    recomm: true,
+    category: 'Burrito'
+  },
+  {
+    id: "18",
+    image: burrito2,
+    title: "Chicken Fajita Burrito",
+    desc: "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+    price: "N280,000",
+    recomm: true,
+    category: 'Burrito'
+  },
+  {
+    id: "19",
+    image: burrito3,
+    title: "Seafood Burrito",
+    desc: "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+    price: "N280,000",
+    recomm: true,
+    category: 'Burrito'
+  },
+  {
+    id: "20",
+    image: burrito4,
+    title: "Veggie Delight Burrito",
+    desc: "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+    price: "N280,000",
+    recomm: true,
+    category: 'Burrito'
+  },
+ 
+
 ]

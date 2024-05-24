@@ -19,7 +19,7 @@
 
 .pizza-card-container .line{
   height: 2px;
-  border: 1px solid #7F8288;
+  background: #7F8288;
   margin-top: 10px;
 }
 
