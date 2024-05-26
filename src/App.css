@@ -8,8 +8,7 @@
 
 }
 
-.btn,
-#btn {
+.btn{
   width: 100px;
   height: 37px;
   color: #1f1f1f;
@@ -25,8 +24,7 @@
   cursor: pointer;
 }
 
-.btn:hover,
-#btn:hover {
+.btn:hover{
   background: #1f1f1f;
   color: #fff;
 }

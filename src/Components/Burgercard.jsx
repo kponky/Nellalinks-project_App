@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { faChevronDown, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/pattern-2/burgercard.css";
+import data from  '../../db.json';
 
 const Burgercard = ({ menuItems }) => {
-  const [isOpen, setIsOpen] = useState(false); // Manage card expansion state
+  const [isOpen, setIsOpen] = useState(false); 
 
   const toggleBurgerCard = () => {
     setIsOpen(!isOpen);
@@ -21,7 +22,7 @@ const Burgercard = ({ menuItems }) => {
       <div className="line"></div>
       {isOpen && (
         <div className="carousel">
-          {menuItems.map((item) => (
+          {data.Items.map((item) => (
             <div key={item.id} className="caurosel-item">
               <img src={item.image} alt={item.title} className="burger-img" />
               <div className="burger-info">

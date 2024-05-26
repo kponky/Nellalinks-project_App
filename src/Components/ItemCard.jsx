@@ -3,31 +3,33 @@ import { useCart } from "../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const ItemCard = ({ item }) => {
+const ItemCard = ({ item, style }) => {
   const { addToCart, cartItems } = useCart();
   const [isInCart, setIsInCart] = useState(false);
 
   useEffect(() => {
     // Check if cartItems is available and not undefined
     if (cartItems) {
-      const isItemInCart = cartItems.some((cartItem) => cartItem.id === item.id);
+      const isItemInCart = cartItems.some(
+        (cartItem) => cartItem.id === item.id
+      );
       setIsInCart(isItemInCart);
     }
   }, [cartItems, item.id]);
-  
+
   const handleAddToCart = () => {
     addToCart(item, item.id);
     setIsInCart(true);
-  }
+  };
 
   const handleRemoveFromCart = () => {
     // Assuming removeFromCart function is defined somewhere
     removeFromCart(item.id);
     setIsInCart(false);
-  }
+  };
 
   return (
-    <div className="contents">
+    <div className="contents" style={style}>
       <div className="home-content_img">
         <img src={item.image} alt={item.title} className="itemImg" />
       </div>
@@ -37,7 +39,7 @@ const ItemCard = ({ item }) => {
         <p>{item.desc}</p>
         <div className="price-btn">
           <p>{item.price}</p>
-          {isInCart ? ( 
+          {isInCart ? (
             <button className="btn btn2" onClick={handleRemoveFromCart}>
               <FontAwesomeIcon icon={faTimes} className="icon" />
             </button>

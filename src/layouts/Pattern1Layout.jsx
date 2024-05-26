@@ -2,9 +2,8 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import FooterMenu from "../Components/FooterMenu";
 import Header from "../Components/Header";
-import '../styles/main.css'
-
-
+import "../styles/main.css";
+import { Link } from "react-router-dom";
 
 const Pattern1 = () => {
   return (

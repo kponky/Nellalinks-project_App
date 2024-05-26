@@ -10,9 +10,8 @@ const Tabs = ({ categories, selectedCategory, setSelectedCategory }) => {
     <div className="tabs-container">
       {categories.map((category, index) => (
         <button
-        className={selectedCategory === category ? "active" : ""}
+          className={selectedCategory === category ? "active" : ""}
           key={index}
-          id="btn"
           onClick={() => handleCategoryChange(category)}
         >
           {category}

@@ -1,8 +1,8 @@
 {
-  "Items": [
+  "items": [
     {
       "id": "1",
-      "image": "../assets/harmburger.png",
+      "image": "./src/assets/harmburger.png",
       "title": "HamBurger",
       "desc": "Smoked Brisket Sandwich, featuring Brisket",
       "price": "N280,000",
@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "image": "../assets/turkey burger.png",
+      "image": "./src/assets/turkey burger.png",
       "title": "Turkey Burger",
       "desc": "Smoked Brisket Sandwich, featuring tender brisket",
       "price": "N280,000",
@@ -20,7 +20,7 @@
     },
     {
       "id": "3",
-      "image": "../assets/elk burger.png",
+      "image": "./src/assets/elk burger.png",
       "title": "Elk Burger",
       "desc": "Smoked Brisket Sandwich, featuring tender brisket",
       "price": "280,000",
@@ -29,7 +29,7 @@
     },
     {
       "id": "4",
-      "image": "../assets/portello mushroom.png",
+      "image": "./src/assets/portello mushroom.png",
       "title": "PortelloBello Mushroom burger",
       "desc": "Smoked Brisket Sandwich, featuring tender brisket",
       "price": "N280,000",
@@ -38,7 +38,7 @@
     },
     {
       "id": "5",
-      "image": "../assets/Maple_Bars_720x.jpg",
+      "image": "./src/assets/Maple_Bars_720x.jpg",
       "title": "Maple Bacon Donut",
       "desc": " A unique combination of sweet and savory flavors, this donut features a maple glaze topped with crispy bacon bits. ",
       "price": "N280,000",
@@ -47,7 +47,7 @@
     },
     {
       "id": "6",
-      "image": "../assets/jelly donut.jpg",
+      "image": "./src/assets/jelly donut.jpg",
       "title": "Jelly-filled Donut",
       "desc": "pastry is filled with a sweet fruit jelly, typically raspberry or strawberry.",
       "price": "N280,000",
@@ -56,7 +56,7 @@
     },
     {
       "id": "7",
-      "image": "../assets/milky donuts.jpeg",
+      "image": "./src/assets/milky donuts.jpeg",
       "title": "Milky Donuts",
       "desc": ". Each bite offers a smooth and comforting taste, reminiscent of a creamy milkshake or a sweet dairy treat.",
       "price": "N280,000",
@@ -65,7 +65,7 @@
     },
     {
       "id": "8",
-      "image": "../assets/Glazed-Donutsjpg.jpg",
+      "image": "./src/assets/Glazed-Donutsjpg.jpg",
       "title": "Glazed Donut",
       "desc": " A classic donut with a smooth, sweet glaze covering its fluffy interior.",
       "price": "N280,000",
@@ -74,7 +74,7 @@
     },
     {
       "id": "9",
-      "image": "../assets/Cheddar cheese.jpeg",
+      "image": "./src/assets/Cheddar cheese.jpeg",
       "title": "Cheddar Cheese",
       "desc": "A versatile cheese with a rich, tangy flavor and a smooth texture, perfect for melting on sandwiches, burgers, or nachos.",
       "price": "N280,000",
@@ -83,7 +83,7 @@
     },
     {
       "id": "10",
-      "image": "../assets/Mozzarella cheese.jpeg",
+      "image": "./src/assets/Mozzarella cheese.jpeg",
       "title": "Mozzarella Cheese",
       "desc": " A mild and creamy cheese with a stretchy texture when melted, commonly used on pizzas, lasagnas, and caprese salads.",
       "price": "N280,000",
@@ -92,7 +92,7 @@
     },
     {
       "id": "11",
-      "image": "../assets/Swiss cheese.jpeg",
+      "image": "./src/assets/Swiss cheese.jpeg",
       "title": "Swiss Cheese",
       "desc": "Known for its nutty and slightly sweet flavor, Swiss cheese has a firm texture and features iconic holes.",
       "price": "N280,000",
@@ -101,7 +101,7 @@
     },
     {
       "id": "12",
-      "image": "../assets/Gouda cheese.jpeg",
+      "image": "./src/assets/Gouda cheese.jpeg",
       "title": "Gouda Cheese",
       "desc": "Gouda is delicious on its own, sliced in sandwiches, or melted into macaroni and cheese.",
       "price": "N280,000",
@@ -110,7 +110,7 @@
     },
     {
       "id": "13",
-      "image": "../assets/Margherita pizza.jpeg",
+      "image": "./src/assets/Margherita pizza.jpeg",
       "title": "Margherita Pizza",
       "desc": "A classic pizza featuring a thin crust topped with tomato sauce, fresh mozzarella cheese, basil leaves, and a drizzle of olive oil",
       "price": "N280,000",
@@ -119,7 +119,7 @@
     },
     {
       "id": "14",
-      "image": "../assets/Hawaiian pizza.jpeg",
+      "image": "./src/assets/Hawaiian pizza.jpeg",
       "title": "Hawaiian Pizza",
       "desc": "Hawaiian pizza features tomato sauce, mozzarella cheese, ham, and pineapple. ",
       "price": "N280,000",
@@ -128,7 +128,7 @@
     },
     {
       "id": "15",
-      "image": "../assets/BBQ Chicken pizza.jpeg",
+      "image": "./src/assets/BBQ Chicken pizza.jpeg",
       "title": "BBQ Chicken Pizza",
       "desc": "A modern twist on traditional pizza, BBQ chicken pizza includes barbecue sauce instead of tomato sauce.",
       "price": "N280,000",
@@ -137,7 +137,7 @@
     },
     {
       "id": "16",
-      "image": "../assets/veggie supreme pizza.jpeg",
+      "image": "./src/assets/veggie supreme pizza.jpeg",
       "title": "Veggie Supreme Pizza",
       "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
       "price": "N280,000",
@@ -146,7 +146,7 @@
     },
     {
       "id": "17",
-      "image": "../assets/Classic Beef Burrito.jpeg",
+      "image": "./src/assets/Classic Beef Burrito.jpeg",
       "title": "Classic Beef Burrito",
       "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
       "price": "N280,000",
@@ -155,7 +155,7 @@
     },
     {
       "id": "18",
-      "image": "../assets/Chicken Fajita Burrito.jpeg",
+      "image": "./src/assets/Chicken Fajita Burrito.jpeg",
       "title": "Chicken Fajita Burrito",
       "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
       "price": "N280,000",
@@ -164,7 +164,7 @@
     },
     {
       "id": "19",
-      "image": "../assets/Seafood Burrito.jpeg",
+      "image": "./src/assets/Seafood Burrito.jpeg",
       "title": "Seafood Burrito",
       "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
       "price": "N280,000",
@@ -173,7 +173,7 @@
     },
     {
       "id": "20",
-      "image": "../assets/Veggie Delight Burrito.jpeg",
+      "image": "./src/assets/Veggie Delight Burrito.jpeg",
       "title": "Veggie Delight Burrito",
       "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
       "price": "N280,000",

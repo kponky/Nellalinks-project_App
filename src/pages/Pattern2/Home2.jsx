@@ -1,46 +1,74 @@
-import React from "react";
-import pizzaImg from "../../assets/pizza.png";
-import Search from "../../Components/Search";
-import "../../styles/pattern-2/home.css";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Burgercard from "../../Components/Burgercard";
-import PizzaCard from "../../Components/PizzaCard";
-import DonutCard from "../../Components/DonutCard";
-import BurritoCard from "../../Components/BurritoCard";
-import CheeseCard from "../../Components/CheeseCard";
+import data from "../../../db.json";
 import ItemCard from "../../Components/ItemCard";
-import { menuData2 } from "../../data/menuData2";
-import useFetch from "../../../useFetch";
+import Search from "../../Components/Search";
+import pizzaImg from "../../assets/pizza.png";
+import "../../styles/pattern-2/home.css";
 
 const Home2 = () => {
-  const {data, loading, error} = useFetch("https://66500997ec9b4a4a6030791d.mockapi.io/nellalinks-projects-api/")
+  const [openSection, setOpenSection] = useState(null);
 
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Error: {error}</p>
-    
-  
-  const burgerItems = data.filter((items) => items.category === "Burger");
-  const pizzaItems = data.filter((items) => items.category === "Pizza");
-  const donutItems = data.filter((items) => items.category === "Donut");
-  const cheeseItems = data.filter((items) => items.category === "Cheese");
-  const burritoItems = data.filter((items) => items.category === "Burrito");
+  const toggleSection = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
+  // const {data, loading} = useFetch("https://66500997ec9b4a4a6030791d.mockapi.io/nellalinks-projects-api/items")
+
+  // if (loading) return <p>Loading...</p>
+  // if (error) return <p>Error: {error}</p>
+
+  const burgerItems = data.items.filter((item) => item.category === "Burger");
+  const pizzaItems = data.items.filter((item) => item.category === "Pizza");
+  const donutItems = data.items.filter((item) => item.category === "Donut");
+  const cheeseItems = data.items.filter((item) => item.category === "Cheese");
+  const burritoItems = data.items.filter((item) => item.category === "Burrito");
 
   return (
     <div className="menu2-container">
       <Link to="/pattern-2">
-        <div className="menu2-img">
-          <img src={pizzaImg} alt="" />
-        </div>
-        <div className="menu2-heading">
+        <div
+          className="menu2-img"
+          style={{
+            backgroundImage: `url(${pizzaImg})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           <h1>Menu</h1>
         </div>
         <div className="menu2-content">
           <Search />
-          <Burgercard menuItems={burgerItems} />
-          <PizzaCard menuItems={pizzaItems} />
-          <DonutCard menuItems={donutItems} />
-          <BurritoCard menuItems={burritoItems} />
-          <CheeseCard menuItems={cheeseItems} />
+
+          <div className="accordion-section">
+            <h2 onClick={() => toggleSection("burgers")}>Burgers</h2>
+            {openSection === "burgers" && (
+              <div className="accordion-content">
+                <div className="" style={{ display: "flex", width:"100%", overflowX:"auto", gap:"24px" }}>
+                  {burgerItems.map((item) => (
+                    <ItemCard
+                      key={item?.id}
+                      item={item}
+                      style={{ width: "800px" }}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className="accordion-section">
+            <h2 onClick={() => toggleSection("burritos")}>Burritos</h2>
+            {openSection === "burritos" && (
+              <div className="accordion-content">
+                <div className="" style={{ display: "flex" }}>
+                  {burritoItems.map((item) => (
+                    <ItemCard key={item?.id} item={item} />
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </Link>
     </div>
