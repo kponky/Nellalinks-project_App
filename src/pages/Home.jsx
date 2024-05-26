@@ -32,7 +32,7 @@ const Home = () => {
 
   const handleScrollDown = () => {
     const contentElement = document.querySelector(".home-container");
-    contentElement.scrollBy({ top: 100, behavior: "smooth" });
+    contentElement.scrollBy({behavior: "smooth" });
   };
 
   return (
@@ -48,7 +48,7 @@ const Home = () => {
 
       <div className="scroll-btns">
         <button className="btn scrol-btn" onClick={handleScrollDown}>
-          <FontAwesomeIcon icon={faChevronUp} />{" "}
+          <FontAwesomeIcon icon={faChevronUp} />
           {/* Use faChevronDown for scrolling down */}
         </button>
       </div>

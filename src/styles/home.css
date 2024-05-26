@@ -145,41 +145,10 @@
   color: white;
 }
 
-
-
-
-/* .home-container .home-content .contents .price-btn button .icon::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 1px #1f1f1f;
-    background-color: white; 
-    border-radius: 50%;
-    z-index: -1;
-  }
-  
-  .home-container .home-content .contents .price-btn button .icon svg path {
-    fill: black; 
-  } */
-   /*<div className="home-content">
-        {filteredItems.map((item) => (
-          <div key={item.ItemCard}>
-          <h1>{item.category}</h1>
-            <ItemCard key={item.id} item={item} />
-          </div>
-        ))}
-      </div>*/
-
-
 .scroll-btns{
-  position: fixed;
-  right: 80px;
-  bottom: 100px;
-  scroll-behavior: smooth;
+    bottom: 90px;
+    right:  95px;
+    position: fixed;
 
 }
 
@@ -191,6 +160,20 @@
   border-radius: 16px ;
   opacity: 0px;
   font-size: 18px;
-
-
 }
+
+   /*<div className="home-content">
+        {filteredItems.map((item) => (
+          <div key={item.ItemCard}>
+          <h1>{item.category}</h1>
+            <ItemCard key={item.id} item={item} />
+          </div>
+        ))}
+      </div>*/   /*<div className="home-content">
+        {filteredItems.map((item) => (
+          <div key={item.ItemCard}>
+          <h1>{item.category}</h1>
+            <ItemCard key={item.id} item={item} />
+          </div>
+        ))}
+      </div>*/
