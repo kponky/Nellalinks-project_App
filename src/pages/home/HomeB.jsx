@@ -4,7 +4,6 @@ import data from "../../../db.json";
 import ItemCard from "../../Components/ItemCard";
 import Search from "../../Components/Search";
 import pizzaImg from "../../assets/pizza.png";
-import "../../styles/pattern-2/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
@@ -28,22 +27,15 @@ const Home2 = () => {
   return (
     <div className="menu2-container">
       <Link to="/pattern-2">
-        <div
-          className="menu2-img"
-          style={{
-            backgroundImage: `url(${pizzaImg})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <h1>Menu</h1>
-        </div>
+      <div className="menu2-header">
+      <h1>Menu</h1>
+      </div>
+
         <div className="menu2-content">
           <Search />
 
           <div className="scroll-btns">
-          <button className="btn scrol-btn" >
+          <button className="btn scrol-btn">
             <FontAwesomeIcon icon={faChevronUp} />{" "}
           </button>
         </div>
@@ -52,7 +44,15 @@ const Home2 = () => {
             <h2 onClick={() => toggleSection("burgers")}>Burgers</h2>
             {openSection === "burgers" && (
               <div className="accordion-content">
-                <div className="" style={{ display: "flex", width:"100%", overflowX:"auto", gap:"24px" }}>
+                <div
+                  className=""
+                  style={{
+                    display: "flex",
+                    width: "100%",
+                    overflowX: "auto",
+                    gap: "24px",
+                  }}
+                >
                   {burgerItems.map((item) => (
                     <ItemCard
                       key={item?.id}
