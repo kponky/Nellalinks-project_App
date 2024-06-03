@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
 
 }
 
-.btn{
+.btn {
   width: 100px;
   height: 37px;
   color: #1f1f1f;
@@ -24,7 +25,7 @@
   cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
   background: #1f1f1f;
   color: #fff;
 }
@@ -39,4 +40,25 @@ img {
 a {
   text-decoration: none;
   color: #1f1f1f;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+  .header-wrapper {
+
+    top: -2px;
+
+  }
+
+  .footer-wrapper {
+    bottom: -2px;
+
+  }
 }

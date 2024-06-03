@@ -13,20 +13,27 @@ const Cart = () => {
   );
 
   return (
-    <div className="cart-page" id="cart">
-      <div className="cart-header">
-        <div className="itemNo">
-          <h1>Cart</h1>
-          <span>{totalItems} items</span>
-        </div>
-        <div className="line"></div>
-      </div>
-      {cart.map((item) => (
-        <CartItem key={item.id} item={item} />
-      ))}
+  
+   <div>
+   <div className="cart-page" id="cart">
+   <div className="cart-header">
+     <div className="itemNo">
+       <h1>Cart</h1>
+       <span>{totalItems} items</span>
+     </div>
+     <div className="line"></div>
+   </div>
+   {cart.map((item) => (
+     <CartItem key={item.id} item={item} />
+   ))}
 
-      <Checkout/>
-    </div>
+
+ </div>
+   <Checkout/>
+   
+   </div>
+       
+  
   );
 };
 

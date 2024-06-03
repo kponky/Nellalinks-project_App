@@ -22,7 +22,8 @@ const AppRoutes = () => {
         </Route>
         <Route path="/pattern-2" element={<Pattern2Layout />}>
           <Route index element={<Home2 />} />
-          <Route path="home-B" element={<HomeB/>}></Route>
+          <Route path="home-a" element={<Home2/>}></Route>
+          <Route path="home-b" element={<HomeB/>}></Route>
           <Route path="cart-page" element={<CartPage2 />}></Route>
           <Route path="help-other2" element={<HelpOther2 />}></Route>
         </Route>

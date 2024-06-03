@@ -16,14 +16,17 @@
 }
 
 .menu2-container .menu2-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   max-width: 500px;
   height: 304px;
+  border-radius: 0 0 40px 40px;
   position: relative;
+  overflow: hidden; 
+  justify-content: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 0 0 40px 40px;
-  overflow: hidden;
 }
 
 .menu2-container .menu2-img::before {
@@ -34,7 +37,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-
 }
 
 .menu2-container .menu2-img h1 {
@@ -64,7 +66,60 @@
 
 .accordion-content {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #3f0606;
   border-radius: 4px;
   border-top: none;
 }
+
+.accordion-section{
+  border: 0;
+  margin-bottom: 20px;
+
+}
+
+.accordion-section h2{
+background: transparent;
+border: 0;
+border-bottom: 1.5px solid #7F8288;
+} 
+
+.accordion-section h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.accordion-content{
+  border: none;
+  
+}
+
+.accordion-section .accordion-content .accordion-card{
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  gap: 20px;
+  
+  
+}
+
+.accordion-card::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion-card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.home-b .accordion-section .acordion-card2{
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+/* .accordion-section .fa-chevron-down {
+  transform: rotate(180deg); 
+} */
+

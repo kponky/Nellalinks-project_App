@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useCart } from "../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
+import '../styles/itemCard.css'
 
-const ItemCard = ({ item, style }) => {
+const ItemCard = ({ item}) => {
   const { addToCart, cartItems } = useCart();
   const [isInCart, setIsInCart] = useState(false);
 
@@ -29,11 +30,11 @@ const ItemCard = ({ item, style }) => {
   };
 
   return (
-    <div className="contents" style={style}>
-      <div className="home-content_img">
+    <div className="contents" >
+      <div className="content_img">
         <img src={item.image} alt={item.title} className="itemImg" />
       </div>
-      <div className="home-content-desc">
+      <div className="content-desc">
         {item.recomm && <span>Recommended </span>}
         <h4>{item.title}</h4>
         <p>{item.desc}</p>

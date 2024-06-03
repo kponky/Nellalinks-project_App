@@ -1,0 +1,130 @@
+.contents{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+  width: 100%;
+  padding-block: 20px;
+  margin-block: 20px;
+  border-radius: 12px;
+  padding-inline: 20px;
+  margin-bottom: 40px;
+}
+
+.content-desc{
+  display: flex;
+  flex-direction: column;
+}
+
+.content_img .itemImg{
+  border-radius: 12px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.contents img {
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.home-container .home-content .contents span {
+  background-color: #1f1f1f;
+  padding-inline: 8px;
+  color: #fff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  width: 130px;
+  height: 28px;
+  /* /* height: 28px; */
+ } 
+
+
+
+.contents h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f1f1f;
+  padding-block: 8px;
+} 
+
+.contents p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8C8C8C;
+} 
+
+.contents .price-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 10px;
+} 
+
+.contents .price-btn p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1f1f1f;
+} 
+
+.contents .price-btn button {
+  border: none;
+  background: transparent;
+} 
+
+.contents .price-btn .btn {
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #1f1f1f;
+} 
+
+.contents .price-btn #selectedIcon{
+  width: 32px;
+  height: 35px;
+  box-shadow: none;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+ background: #1f1f1f;
+ color: white;
+ z-index: 9;
+} 
+
+.contents .price-btn .btn {
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #1f1f1f;
+} 
+
+.contents .price-btn .btn2 {
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  background: #141212;
+  color: #fff;
+  border: 2px solid #1f1f1f; 
+ } 
+
+ .contents .price-btn .btn:hover {
+  background: black;
+  color: white;
+} 
+
+

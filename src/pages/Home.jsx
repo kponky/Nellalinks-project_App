@@ -30,10 +30,10 @@ const Home = () => {
     return acc;
   }, {});
 
-  const handleScrollDown = () => {
-    const contentElement = document.querySelector(".home-container");
-    contentElement.scrollBy({behavior: "smooth" });
-  };
+  // const handleScrollDown = () => {
+  //   const contentElement = document.querySelector(".home-container");
+  //   contentElement.scrollBy({behavior: "smooth" });
+  // };
 
   return (
     <div className="home-container">
@@ -47,11 +47,13 @@ const Home = () => {
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
       <div className="scroll-btns">
-        <button className="btn scrol-btn" onClick={handleScrollDown}>
+       { /*<button className="btn scrol-btn" onClick={handleScrollDown}>
           <FontAwesomeIcon icon={faChevronUp} />
-          {/* Use faChevronDown for scrolling down */}
-        </button>
-      </div>
+  </button>*/}
+      </div> 
+
+
+      
       {/* items list*/}
 
       <div className="home-content">
@@ -65,6 +67,7 @@ const Home = () => {
         ))}
       </div>
       </Link>
+      
     </div>
   );
 };

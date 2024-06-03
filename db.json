@@ -179,6 +179,42 @@
       "price": "N280,000",
       "recomm": true,
       "category": "Burrito"
+    },
+    {
+      "id": "21",
+      "image": "./src/assets/Veggie Delight Burrito.jpeg",
+      "title": "Chicken Sharwama",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "price": "N280,000",
+      "recomm": true,
+      "category": "Sharwama"
+    },
+    {
+      "id": "22",
+      "image": "./src/assets/Veggie Delight Burrito.jpeg",
+      "title": "Beef Sharwama",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "price": "N280,000",
+      "recomm": true,
+      "category": "Sharwama"
+    },
+    {
+      "id": "23",
+      "image": "./src/assets/Veggie Delight Burrito.jpeg",
+      "title": "Mixed Sharwama",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "price": "N280,000",
+      "recomm": true,
+      "category": "Sharwama"
+    },
+    {
+      "id": "24",
+      "image": "./src/assets/Veggie Delight Burrito.jpeg",
+      "title": "Falafel Shawarma",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "price": "N280,000",
+      "recomm": true,
+      "category": "Sharwama"
     }
   ]
 }

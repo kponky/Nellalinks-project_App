@@ -8,7 +8,8 @@
 }
 
 .home-container .menu h1 {
-  padding-block: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   color: #1f1f1f;
   font-weight: 700;
   font-size: 24px;
@@ -29,7 +30,7 @@
   overflow: hidden;
 }
 
-.home-container .home-content .contents {
+/* .home-container .home-content .contents {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -41,61 +42,61 @@
   border-radius: 12px;
   padding-inline: 20px;
   margin-bottom: 40px;
-}
+} */
 
-.home-container .home-content .home-content-desc {
+/* .home-container .home-content .home-content-desc {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.home-container .home-content .contents span {
+/* .home-container .home-content .contents span {
   background-color: #1f1f1f;
   padding: 6px;
   color: #fff;
   border-radius: 15px;
   width: 130px;
   /* height: 28px; */
-}
+/* } */ 
 
-.home-container .home-content .contents h4 {
+/* .home-container .home-content .contents h4 {
   font-size: 15px;
   font-weight: 700;
   color: #1f1f1f;
   padding-block: 8px;
-}
+} */
 
-.home-container .home-content .contents p {
+/* .home-container .home-content .contents p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: #8C8C8C;
-}
+} */
 
-.home-container .home-content .contents .price-btn {
+/* .home-container .home-content .contents .price-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-block: 10px;
-}
+} */
 
-.home-container .home-content .contents .price-btn p {
+/* .home-container .home-content .contents .price-btn p {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   color: #1f1f1f;
-}
+} */
 
 
-.home-container .home-content .contents .price-btn button {
+/* .home-container .home-content .contents .price-btn button {
   border: none;
   background: transparent;
-}
+} */
 
-.home-container .home-content .contents .price-btn button .icon {
+/* .home-container .home-content .contents .price-btn button .icon {
   font-size: 18px;
-}
+} */
 
-.home-container .home-content .contents .price-btn .btn {
+/* .home-container .home-content .contents .price-btn .btn {
   width: 30px;
   height: 30px;
   box-shadow: none;
@@ -103,7 +104,7 @@
   align-items: center;
   text-align: center;
   border: 2px solid #1f1f1f;
-}
+} */
 
 /* .home-container .home-content .contents .price-btn #selectedIcon{
     width: 32px;
@@ -117,7 +118,7 @@
    z-index: 9;
   } */
 
-.home-container .home-content .contents .price-btn .btn {
+/* .home-container .home-content .contents .price-btn .btn {
   width: 30px;
   height: 30px;
   box-shadow: none;
@@ -125,9 +126,9 @@
   align-items: center;
   text-align: center;
   border: 2px solid #1f1f1f;
-}
+} */
 
-.home-container .home-content .contents .price-btn .btn2 {
+/* .home-container .home-content .contents .price-btn .btn2 {
   width: 30px;
   height: 30px;
   box-shadow: none;
@@ -137,17 +138,17 @@
   background: #141212;
   color: #fff;
   /* border: 2px solid #1f1f1f; */
-}
+/* }  */
 
-
+/* 
 .home-container .home-content .contents .price-btn .btn:hover {
   background: black;
   color: white;
-}
+} */
 
 .scroll-btns{
     bottom: 90px;
-    right:  95px;
+    right:  415px;
     position: fixed;
 
 }
@@ -177,3 +178,13 @@
           </div>
         ))}
       </div>*/
+
+
+      @media screen and (max-width: 768px){
+        .scroll-btns{
+          bottom: 90px;
+          right:  35px;
+          position: fixed;
+      
+      }
+    }

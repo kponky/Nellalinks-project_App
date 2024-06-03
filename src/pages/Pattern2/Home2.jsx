@@ -6,13 +6,17 @@ import Search from "../../Components/Search";
 import pizzaImg from "../../assets/pizza.png";
 import "../../styles/pattern-2/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const Home2 = () => {
   const [openSection, setOpenSection] = useState(null);
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
+  };
+
+  const renderChevronIcon = (section) => {
+    return openSection === section ? faChevronUp : faChevronDown;
   };
   // const {data, loading} = useFetch("https://66500997ec9b4a4a6030791d.mockapi.io/nellalinks-projects-api/items")
 
@@ -24,6 +28,7 @@ const Home2 = () => {
   const donutItems = data.items.filter((item) => item.category === "Donut");
   const cheeseItems = data.items.filter((item) => item.category === "Cheese");
   const burritoItems = data.items.filter((item) => item.category === "Burrito");
+  const sharwamaItems = data.items.filter((item) => item.category === "Sharwama");
 
   return (
     <div className="menu2-container">
@@ -32,9 +37,6 @@ const Home2 = () => {
           className="menu2-img"
           style={{
             backgroundImage: `url(${pizzaImg})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
           }}
         >
           <h1>Menu</h1>
@@ -43,22 +45,23 @@ const Home2 = () => {
           <Search />
 
           <div className="scroll-btns">
-          <button className="btn scrol-btn" >
-            <FontAwesomeIcon icon={faChevronUp} />{" "}
-          </button>
-        </div>
+            <button className="btn scrol-btn">
+              <FontAwesomeIcon icon={faChevronUp} />
+            </button>
+          </div>
 
           <div className="accordion-section">
-            <h2 onClick={() => toggleSection("burgers")}>Burgers</h2>
+            <h2 onClick={() => toggleSection("burgers")}>
+              Burgers
+              <span>
+                <FontAwesomeIcon icon={renderChevronIcon("burgers")} />
+              </span>
+            </h2>
             {openSection === "burgers" && (
               <div className="accordion-content">
-                <div className="" style={{ display: "flex", width:"100%", overflowX:"auto", gap:"24px" }}>
+                <div className="accordion-card">
                   {burgerItems.map((item) => (
-                    <ItemCard
-                      key={item?.id}
-                      item={item}
-                      style={{ width: "800px" }}
-                    />
+                    <ItemCard key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -66,10 +69,15 @@ const Home2 = () => {
           </div>
 
           <div className="accordion-section">
-            <h2 onClick={() => toggleSection("pizzas")}>Pizza</h2>
+            <h2 onClick={() => toggleSection("pizzas")}>
+              Pizza
+              <span>
+                <FontAwesomeIcon icon={renderChevronIcon("pizzas")} />
+              </span>
+            </h2>
             {openSection === "pizzas" && (
               <div className="accordion-content">
-                <div className="" style={{ display: "flex" }}>
+                <div className="accordion-card">
                   {pizzaItems.map((item) => (
                     <ItemCard key={item?.id} item={item} />
                   ))}
@@ -78,10 +86,15 @@ const Home2 = () => {
             )}
           </div>
           <div className="accordion-section">
-            <h2 onClick={() => toggleSection("dougnuts")}>Doughnuts</h2>
+            <h2 onClick={() => toggleSection("dougnuts")}>
+              Doughnuts
+              <span>
+                <FontAwesomeIcon icon={renderChevronIcon("dougnuts")} />
+              </span>
+            </h2>
             {openSection === "dougnuts" && (
               <div className="accordion-content">
-                <div className="" style={{ display: "flex" }}>
+                <div className="accordion-card">
                   {donutItems.map((item) => (
                     <ItemCard key={item?.id} item={item} />
                   ))}
@@ -90,10 +103,16 @@ const Home2 = () => {
             )}
           </div>
           <div className="accordion-section">
-            <h2 onClick={() => toggleSection("burritos")}>Burritos</h2>
+            <h2 onClick={() => toggleSection("burritos")}>
+              Burritos{" "}
+              <span>
+                {" "}
+                <FontAwesomeIcon icon={renderChevronIcon("burritos")} />
+              </span>{" "}
+            </h2>
             {openSection === "burritos" && (
               <div className="accordion-content">
-                <div className="" style={{ display: "flex" }}>
+                <div className="accordion-card">
                   {burritoItems.map((item) => (
                     <ItemCard key={item?.id} item={item} />
                   ))}
@@ -102,10 +121,16 @@ const Home2 = () => {
             )}
           </div>
           <div className="accordion-section">
-            <h2 onClick={() => toggleSection("cheese")}>Cheese</h2>
+            <h2 onClick={() => toggleSection("cheese")}>
+              Cheese{" "}
+              <span>
+                {" "}
+                <FontAwesomeIcon icon={renderChevronIcon("cheese")} />
+              </span>{" "}
+            </h2>
             {openSection === "cheese" && (
               <div className="accordion-content">
-                <div className="" style={{ display: "flex" }}>
+                <div className="accordion-card">
                   {cheeseItems.map((item) => (
                     <ItemCard key={item?.id} item={item} />
                   ))}
@@ -114,10 +139,16 @@ const Home2 = () => {
             )}
           </div>
           <div className="accordion-section">
-            <h2 onClick={() => toggleSection("burritos")}>Cake</h2>
+            <h2 onClick={() => toggleSection("burritos")}>
+              Cake
+              <span>
+                
+                <FontAwesomeIcon icon={renderChevronIcon("burritos")} />
+              </span>
+            </h2>
             {openSection === "burritos" && (
               <div className="accordion-content">
-                <div className="" style={{ display: "flex" }}>
+                <div className="accordion-card">
                   {burritoItems.map((item) => (
                     <ItemCard key={item?.id} item={item} />
                   ))}
@@ -126,22 +157,35 @@ const Home2 = () => {
             )}
           </div>
           <div className="accordion-section">
-            <h2 onClick={() => toggleSection("burritos")}>Yougnuts</h2>
-            {openSection === "burritos" && (
+            <h2 onClick={() => toggleSection("sharwama")}>
+            Sharwama
+              <span>
+                
+                <FontAwesomeIcon icon={renderChevronIcon("sharwama")} />
+              </span>
+            </h2>
+            {openSection === "sharwama" && (
               <div className="accordion-content">
-                <div className="" style={{ display: "flex" }}>
-                  {burritoItems.map((item) => (
+                <div className="accordion-card">
+                  {sharwamaItems.map((item) => (
                     <ItemCard key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
             )}
           </div>
+         
+
           <div className="accordion-section">
-            <h2 onClick={() => toggleSection("burritos")}>Sharwarma</h2>
+            <h2 onClick={() => toggleSection("cheese")}>
+              Youghuts
+              <span>
+                <FontAwesomeIcon icon={renderChevronIcon("cheese")} />
+              </span>
+            </h2>
             {openSection === "burritos" && (
               <div className="accordion-content">
-                <div className="" style={{ display: "flex" }}>
+                <div className="accordion-card">
                   {burritoItems.map((item) => (
                     <ItemCard key={item?.id} item={item} />
                   ))}
@@ -149,6 +193,7 @@ const Home2 = () => {
               </div>
             )}
           </div>
+         
         </div>
       </Link>
     </div>

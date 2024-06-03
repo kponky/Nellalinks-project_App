@@ -26,38 +26,29 @@ const Home2 = () => {
 
   return (
     <div className="menu2-container">
-      <Link to="/pattern-2">
-      <div className="menu2-header">
-      <h1>Menu</h1>
-      </div>
+      <Link to="/pattern-2/home-b">
+        <div className="menu2-header">
+          <h1>Menu</h1>
+        </div>
 
         <div className="menu2-content">
           <Search />
 
           <div className="scroll-btns">
-          <button className="btn scrol-btn">
-            <FontAwesomeIcon icon={faChevronUp} />{" "}
-          </button>
-        </div>
+            <button className="btn scrol-btn">
+              <FontAwesomeIcon icon={faChevronUp} />{" "}
+            </button>
+          </div>
 
           <div className="accordion-section">
             <h2 onClick={() => toggleSection("burgers")}>Burgers</h2>
             {openSection === "burgers" && (
               <div className="accordion-content">
-                <div
-                  className=""
-                  style={{
-                    display: "flex",
-                    width: "100%",
-                    overflowX: "auto",
-                    gap: "24px",
-                  }}
-                >
+                <div className="accordaion-card2">
                   {burgerItems.map((item) => (
                     <ItemCard
                       key={item?.id}
                       item={item}
-                      style={{ width: "800px" }}
                     />
                   ))}
                 </div>

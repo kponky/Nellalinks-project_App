@@ -11,12 +11,11 @@ const Checkout = () => {
   return (
     <div className="checkout-card">
 
-    <div className="checkout-open">
       <div className="summary-down">
         <div className=" summary-icon">
         <h3>Order Summary</h3>
         <button>
-          <FontAwesomeIcon icon={faChevronDown} />{" "}
+          <FontAwesomeIcon icon={faChevronDown}  className="icon"/>
         </button>
         </div>
 
@@ -25,7 +24,7 @@ const Checkout = () => {
             <h3>Subtotal</h3>
             <p>N1000</p>
           </div>
-          <div className="vat">
+          <div className="subtotal">
             <h3>VAT</h3>
             <p>N3000</p>
           </div>
@@ -35,13 +34,13 @@ const Checkout = () => {
           <p>N13000</p>
         </div>
       </div>
-    </div>
+  
       <div className="checkout-close">
         <h3>Order Total </h3>
         <div className="total-icon">
           <h3>N2000</h3>
           <button>
-            <FontAwesomeIcon icon={faChevronUp} />{" "}
+            <FontAwesomeIcon icon={faChevronUp} />
           </button>
         </div>
       </div>
