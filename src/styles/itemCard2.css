@@ -1,15 +1,15 @@
-.contents{
+.itemcard-container{
   display: flex;
   align-items: center;
   gap: 20px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
   width: 100%;
-  padding-block: 15px;
-  margin-block: 10px;
+  padding-block: 20px;
+  margin-block: 20px;
   border-radius: 12px;
-  padding-inline: 15px;
-  margin-bottom: 20px;
+  padding-inline: 20px;
+  margin-bottom: 40px;
 }
 
 .content-desc{
@@ -17,21 +17,21 @@
   flex-direction: column;
 }
 
-.content-img .itemImg{
+.content_img .itemImg{
   border-radius: 12px;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
 }
 
-.contents img {
+.itemcard-container img {
   width: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
 
-.home-container .home-content .contents span {
+ .itemcard-container span {
   background-color: #1f1f1f;
   padding-inline: 8px;
   color: #fff;
@@ -45,40 +45,40 @@
 
 
 
-.contents h4 {
+.itemcard-container h4 {
   font-size: 15px;
   font-weight: 700;
   color: #1f1f1f;
   padding-block: 8px;
 } 
 
-.contents p {
+.itemcard-container p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: #8C8C8C;
 } 
 
-.contents .price-btn {
+.itemcard-container .price-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-block: 10px;
 } 
 
-.contents .price-btn p {
+.itemcard-container .price-btn p {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   color: #1f1f1f;
 } 
 
-.contents .price-btn button {
+.itemcard-container .price-btn button {
   border: none;
   background: transparent;
 } 
 
-.contents .price-btn .btn {
+.itemcard-container .price-btn .btn {
   width: 30px;
   height: 30px;
   box-shadow: none;
@@ -88,7 +88,7 @@
   border: 2px solid #1f1f1f;
 } 
 
-.contents .price-btn #selectedIcon{
+.itemcard-container .price-btn #selectedIcon{
   width: 32px;
   height: 35px;
   box-shadow: none;
@@ -100,7 +100,7 @@
  z-index: 9;
 } 
 
-.contents .price-btn .btn {
+.itemcard-container .price-btn .btn {
   width: 30px;
   height: 30px;
   box-shadow: none;
@@ -110,7 +110,7 @@
   border: 2px solid #1f1f1f;
 } 
 
-.contents .price-btn .btn2 {
+.itemcard-container .price-btn .btn2 {
   width: 30px;
   height: 30px;
   box-shadow: none;
@@ -122,7 +122,7 @@
   border: 2px solid #1f1f1f; 
  } 
 
- .contents .price-btn .btn:hover {
+ .itemcard-container .price-btn .btn:hover {
   background: black;
   color: white;
 } 

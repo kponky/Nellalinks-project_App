@@ -1,12 +1,20 @@
 .menu2-container {
-  padding-top: 60px;
+  padding-top: 72px;
   width: 100%;
   height: 100%;
   margin-bottom: 100px;
   font-family: "Lato", sans-serif;
   position: relative;
-
 }
+
+.menu2-container .menu2-header{
+  padding-block: 10px;
+}
+.menu2-container .menu2-header h1{
+padding-inline: 20px;
+padding-top: 20px;
+}
+
 
 .menu2-container .menu2-img img {
   width: 100%;

@@ -9,8 +9,7 @@ const BurritoCard = () => {
       <div className="bcc-heading">
         <h1> Burrito </h1>
         <button>
-        
-          <FontAwesomeIcon icon={faChevronDown} />{" "}
+          <FontAwesomeIcon icon={faChevronDown} />
         </button>
       </div>
       <div className="line"></div>

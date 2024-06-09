@@ -12,7 +12,7 @@
     {
       "id": "2",
       "image": "./src/assets/turkey burger.png",
-      "title": "Turkey Burger",
+      "title": "Turkey Burger", 
       "desc": "Smoked Brisket Sandwich, featuring tender brisket",
       "price": "N280,000",
       "recomm": true,
@@ -58,7 +58,7 @@
       "id": "7",
       "image": "./src/assets/milky donuts.jpeg",
       "title": "Milky Donuts",
-      "desc": ". Each bite offers a smooth and comforting taste, reminiscent of a creamy milkshake or a sweet dairy treat.",
+      "desc": ". Each bite offers a smooth and comforting taste.",
       "price": "N280,000",
       "recomm": true,
       "category": "Donut"
@@ -76,7 +76,7 @@
       "id": "9",
       "image": "./src/assets/Cheddar cheese.jpeg",
       "title": "Cheddar Cheese",
-      "desc": "A versatile cheese with a rich, tangy flavor and a smooth texture, perfect for melting on sandwiches, burgers, or nachos.",
+      "desc": "A versatile cheese with a rich, tangy flavor and a smooth texture.",
       "price": "N280,000",
       "recomm": true,
       "category": "Cheese"
@@ -85,7 +85,7 @@
       "id": "10",
       "image": "./src/assets/Mozzarella cheese.jpeg",
       "title": "Mozzarella Cheese",
-      "desc": " A mild and creamy cheese with a stretchy texture when melted, commonly used on pizzas, lasagnas, and caprese salads.",
+      "desc": " A mild and creamy cheese with a stretchy texture when melted.",
       "price": "N280,000",
       "recomm": true,
       "category": "Cheese"
@@ -94,7 +94,7 @@
       "id": "11",
       "image": "./src/assets/Swiss cheese.jpeg",
       "title": "Swiss Cheese",
-      "desc": "Known for its nutty and slightly sweet flavor, Swiss cheese has a firm texture and features iconic holes.",
+      "desc": "Known for its nutty and slightly sweet flavor.",
       "price": "N280,000",
       "recomm": true,
       "category": "Cheese"
@@ -103,7 +103,7 @@
       "id": "12",
       "image": "./src/assets/Gouda cheese.jpeg",
       "title": "Gouda Cheese",
-      "desc": "Gouda is delicious on its own, sliced in sandwiches, or melted into macaroni and cheese.",
+      "desc": "Gouda is delicious on its own, sliced in sandwiches.",
       "price": "N280,000",
       "recomm": true,
       "category": "Cheese"
@@ -112,7 +112,7 @@
       "id": "13",
       "image": "./src/assets/Margherita pizza.jpeg",
       "title": "Margherita Pizza",
-      "desc": "A classic pizza featuring a thin crust topped with tomato sauce, fresh mozzarella cheese, basil leaves, and a drizzle of olive oil",
+      "desc": "A classic pizza featuring a thin crust topped with tomato sauce.",
       "price": "N280,000",
       "recomm": true,
       "category": "Pizza"
@@ -130,7 +130,7 @@
       "id": "15",
       "image": "./src/assets/BBQ Chicken pizza.jpeg",
       "title": "BBQ Chicken Pizza",
-      "desc": "A modern twist on traditional pizza, BBQ chicken pizza includes barbecue sauce instead of tomato sauce.",
+      "desc": "A modern twist on traditional pizza, BBQ chicken pizza includes barbecue sauce.",
       "price": "N280,000",
       "recomm": true,
       "category": "Pizza"
@@ -139,7 +139,7 @@
       "id": "16",
       "image": "./src/assets/veggie supreme pizza.jpeg",
       "title": "Veggie Supreme Pizza",
-      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers.",
       "price": "N280,000",
       "recomm": true,
       "category": "Pizza"
@@ -148,7 +148,7 @@
       "id": "17",
       "image": "./src/assets/Classic Beef Burrito.jpeg",
       "title": "Classic Beef Burrito",
-      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions.",
       "price": "N280,000",
       "recomm": true,
       "category": "Burrito"
@@ -157,7 +157,7 @@
       "id": "18",
       "image": "./src/assets/Chicken Fajita Burrito.jpeg",
       "title": "Chicken Fajita Burrito",
-      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers.",
       "price": "N280,000",
       "recomm": true,
       "category": "Burrito"
@@ -166,7 +166,7 @@
       "id": "19",
       "image": "./src/assets/Seafood Burrito.jpeg",
       "title": "Seafood Burrito",
-      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers.",
       "price": "N280,000",
       "recomm": true,
       "category": "Burrito"
@@ -175,7 +175,7 @@
       "id": "20",
       "image": "./src/assets/Veggie Delight Burrito.jpeg",
       "title": "Veggie Delight Burrito",
-      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers.",
       "price": "N280,000",
       "recomm": true,
       "category": "Burrito"
@@ -184,7 +184,7 @@
       "id": "21",
       "image": "./src/assets/Veggie Delight Burrito.jpeg",
       "title": "Chicken Sharwama",
-      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers.",
       "price": "N280,000",
       "recomm": true,
       "category": "Sharwama"
@@ -193,7 +193,7 @@
       "id": "22",
       "image": "./src/assets/Veggie Delight Burrito.jpeg",
       "title": "Beef Sharwama",
-      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers.",
       "price": "N280,000",
       "recomm": true,
       "category": "Sharwama"
@@ -202,7 +202,7 @@
       "id": "23",
       "image": "./src/assets/Veggie Delight Burrito.jpeg",
       "title": "Mixed Sharwama",
-      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers.",
       "price": "N280,000",
       "recomm": true,
       "category": "Sharwama"
@@ -211,7 +211,7 @@
       "id": "24",
       "image": "./src/assets/Veggie Delight Burrito.jpeg",
       "title": "Falafel Shawarma",
-      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers, onions, mushrooms, olives, and tomatoes.",
+      "desc": "A vegetarian-friendly option loaded with a variety of colorful vegetables such as bell peppers.",
       "price": "N280,000",
       "recomm": true,
       "category": "Sharwama"

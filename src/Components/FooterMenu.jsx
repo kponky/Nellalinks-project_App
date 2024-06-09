@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/footer.css";
 import { Link } from "react-router-dom";
-import homeIcon from "../assets/home-03.png";
-import helpOtherIcon from "../assets/information-square.png";
+import homeIcon from "../assets/home-182.png";
+import helpOtherIcon from "../assets/info icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useCart } from "../context/CartContext";

@@ -7,6 +7,7 @@ import pizzaImg from "../../assets/pizza.png";
 import "../../styles/pattern-2/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import useFetch from "../../../useFetch";
 
 const Home2 = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -18,10 +19,10 @@ const Home2 = () => {
   const renderChevronIcon = (section) => {
     return openSection === section ? faChevronUp : faChevronDown;
   };
-  // const {data, loading} = useFetch("https://66500997ec9b4a4a6030791d.mockapi.io/nellalinks-projects-api/items")
+  // const {data, loading, error} = useFetch("https://66500997ec9b4a4a6030791d.mockapi.io/nellalinks-projects-api/items")
 
   // if (loading) return <p>Loading...</p>
-  // if (error) return <p>Error: {error}</p>
+  // if (error) return <p>Error: {error.message}</p>;
 
   const burgerItems = data.items.filter((item) => item.category === "Burger");
   const pizzaItems = data.items.filter((item) => item.category === "Pizza");
@@ -44,11 +45,11 @@ const Home2 = () => {
         <div className="menu2-content">
           <Search />
 
-          <div className="scroll-btns">
+          {/*<div className="scroll-btns">
             <button className="btn scrol-btn">
               <FontAwesomeIcon icon={faChevronUp} />
             </button>
-          </div>
+        </div>*/}
 
           <div className="accordion-section">
             <h2 onClick={() => toggleSection("burgers")}>
@@ -63,6 +64,7 @@ const Home2 = () => {
                   {burgerItems.map((item) => (
                     <ItemCard key={item?.id} item={item} />
                   ))}
+
                 </div>
               </div>
             )}

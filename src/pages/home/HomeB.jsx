@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import data from "../../../db.json";
-import ItemCard from "../../Components/ItemCard";
+import itemCard2 from "../../Components/ItemCard2";
 import Search from "../../Components/Search";
 import pizzaImg from "../../assets/pizza.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,16 +13,16 @@ const Home2 = () => {
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
   };
-  // const {data, loading} = useFetch("https://66500997ec9b4a4a6030791d.mockapi.io/nellalinks-projects-api/items")
+  const {data, loading} = useFetch("https://66500997ec9b4a4a6030791d.mockapi.io/nellalinks-projects-api/items")
 
-  // if (loading) return <p>Loading...</p>
+  if (loading) return <p>Loading...</p>
   // if (error) return <p>Error: {error}</p>
 
-  const burgerItems = data.items.filter((item) => item.category === "Burger");
-  const pizzaItems = data.items.filter((item) => item.category === "Pizza");
-  const donutItems = data.items.filter((item) => item.category === "Donut");
-  const cheeseItems = data.items.filter((item) => item.category === "Cheese");
-  const burritoItems = data.items.filter((item) => item.category === "Burrito");
+  // const burgerItems = data.items.filter((item) => item.category === "Burger");
+  // const pizzaItems = data.items.filter((item) => item.category === "Pizza");
+  // const donutItems = data.items.filter((item) => item.category === "Donut");
+  // const cheeseItems = data.items.filter((item) => item.category === "Cheese");
+  // const burritoItems = data.items.filter((item) => item.category === "Burrito");
 
   return (
     <div className="menu2-container">
@@ -34,11 +34,11 @@ const Home2 = () => {
         <div className="menu2-content">
           <Search />
 
-          <div className="scroll-btns">
+          {/*<div className="scroll-btns">
             <button className="btn scrol-btn">
               <FontAwesomeIcon icon={faChevronUp} />{" "}
             </button>
-          </div>
+  </div>*/}
 
           <div className="accordion-section">
             <h2 onClick={() => toggleSection("burgers")}>Burgers</h2>
@@ -46,7 +46,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="accordaion-card2">
                   {burgerItems.map((item) => (
-                    <ItemCard
+                    <itemCard2
                       key={item?.id}
                       item={item}
                     />
@@ -62,7 +62,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {pizzaItems.map((item) => (
-                    <ItemCard key={item?.id} item={item} />
+                    <itemCard key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {donutItems.map((item) => (
-                    <ItemCard key={item?.id} item={item} />
+                    <itemCard key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -86,7 +86,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {burritoItems.map((item) => (
-                    <ItemCard key={item?.id} item={item} />
+                    <itemCard key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -98,7 +98,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {cheeseItems.map((item) => (
-                    <ItemCard key={item?.id} item={item} />
+                    <itemCard key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -110,7 +110,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {burritoItems.map((item) => (
-                    <ItemCard key={item?.id} item={item} />
+                    <itemCard key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -122,7 +122,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {burritoItems.map((item) => (
-                    <ItemCard key={item?.id} item={item} />
+                    <itemCard2 key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -134,7 +134,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {burritoItems.map((item) => (
-                    <ItemCard key={item?.id} item={item} />
+                    <itemCard2 key={item?.id} item={item} />
                   ))}
                 </div>
               </div>

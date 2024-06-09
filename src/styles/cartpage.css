@@ -3,7 +3,7 @@
   height: 100vh;
   padding-block: 100px;
   padding-inline: 20px;
-  /* margin-bottom: 400px; */
+  margin-bottom: 70px;
 
 }
 
@@ -40,9 +40,10 @@
   /* height: 180px; */
   padding: 10px;
   border-radius: 12px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0B) 1px 1px 1px;
   padding-inline: 24px;
+
 
 
 

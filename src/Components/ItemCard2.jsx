@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useCart } from "../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
-import '../styles/itemCard.css'
+import '../styles/itemCard2.css'
 
-const ItemCard = ({ item}) => {
+const ItemCard2 = ({ item}) => {
   const { addToCart, cartItems } = useCart();
   const [isInCart, setIsInCart] = useState(false);
 
   useEffect(() => {
-    // Check if cartItems is available and not undefined
     if (cartItems) {
       const isItemInCart = cartItems.some(
         (cartItem) => cartItem.id === item.id
@@ -24,14 +23,13 @@ const ItemCard = ({ item}) => {
   };
 
   const handleRemoveFromCart = () => {
-    // Assuming removeFromCart function is defined somewhere
     removeFromCart(item.id);
     setIsInCart(false);
   };
 
   return (
-    <div className="contents" >
-      <div className="content-img">
+    <div className="itemcard-container" >
+      <div className="content_img">
         <img src={item.image} alt={item.title} className="itemImg" />
       </div>
       <div className="content-desc">
@@ -55,4 +53,30 @@ const ItemCard = ({ item}) => {
   );
 };
 
-export default ItemCard;
+export default ItemCard2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+
+// const ItemCard2 = () => {
+//   return (
+//     <div>
+      
+//     </div>
+//   )
+// }
+
+// export default ItemCard2

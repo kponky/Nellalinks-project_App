@@ -27,7 +27,6 @@ const Cart = () => {
      <CartItem key={item.id} item={item} />
    ))}
 
-
  </div>
    <Checkout/>
    
