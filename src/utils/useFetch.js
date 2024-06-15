@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const useFetch = (url) => {
+const API_URL = import.meta.env.VITE_API_URL;
+
+const useFetch = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -10,11 +12,12 @@ const useFetch = (url) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(url);
+        const res = await axios.get(API_URL);
 
-        setData(res.data);
-      } catch (error) {
-        console.log(error);
+        setData(res.data); 
+      } catch (err) {
+        console.error(err);
+        setError(err); 
       } finally {
         setLoading(false);
       }

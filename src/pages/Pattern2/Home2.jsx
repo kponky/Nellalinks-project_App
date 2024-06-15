@@ -1,35 +1,41 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import data from "../../../db.json";
+// import data from "../../../db.json";
 import ItemCard from "../../Components/ItemCard";
 import Search from "../../Components/Search";
 import pizzaImg from "../../assets/pizza.png";
 import "../../styles/pattern-2/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import useFetch from "../../../useFetch";
+import ItemCard2 from "../../Components/ItemCard2";
+import useFetch from "../../utils/useFetch";
 
 const Home2 = () => {
+  const { data, loading, error } = useFetch();
   const [openSection, setOpenSection] = useState(null);
 
+  const items = data;
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
   };
 
+  console.log("items>>>", items)
+
   const renderChevronIcon = (section) => {
     return openSection === section ? faChevronUp : faChevronDown;
   };
-  // const {data, loading, error} = useFetch("https://66500997ec9b4a4a6030791d.mockapi.io/nellalinks-projects-api/items")
 
-  // if (loading) return <p>Loading...</p>
-  // if (error) return <p>Error: {error.message}</p>;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
-  const burgerItems = data.items.filter((item) => item.category === "Burger");
-  const pizzaItems = data.items.filter((item) => item.category === "Pizza");
-  const donutItems = data.items.filter((item) => item.category === "Donut");
-  const cheeseItems = data.items.filter((item) => item.category === "Cheese");
-  const burritoItems = data.items.filter((item) => item.category === "Burrito");
-  const sharwamaItems = data.items.filter((item) => item.category === "Sharwama");
+  const burgerItems = items.filter((item) => item.category === "Burger");
+  const pizzaItems = items.filter((item) => item.category === "Pizza");
+  const donutItems = items.filter((item) => item.category === "Donut");
+  const cheeseItems = items.filter((item) => item.category === "Cheese");
+  const burritoItems = items.filter((item) => item.category === "Burrito");
+  const sharwamaItems = items.filter(
+    (item) => item.category === "Sharwama"
+  );
 
   return (
     <div className="menu2-container">
@@ -53,18 +59,17 @@ const Home2 = () => {
 
           <div className="accordion-section">
             <h2 onClick={() => toggleSection("burgers")}>
-              Burgers
+              Burger
               <span>
                 <FontAwesomeIcon icon={renderChevronIcon("burgers")} />
               </span>
             </h2>
             {openSection === "burgers" && (
               <div className="accordion-content">
-                <div className="accordion-card">
+                <div className="accordion-card-row">
                   {burgerItems.map((item) => (
-                    <ItemCard key={item?.id} item={item} />
+                    <ItemCard2 key={item?.id} item={item} />
                   ))}
-
                 </div>
               </div>
             )}
@@ -144,7 +149,6 @@ const Home2 = () => {
             <h2 onClick={() => toggleSection("burritos")}>
               Cake
               <span>
-                
                 <FontAwesomeIcon icon={renderChevronIcon("burritos")} />
               </span>
             </h2>
@@ -160,9 +164,8 @@ const Home2 = () => {
           </div>
           <div className="accordion-section">
             <h2 onClick={() => toggleSection("sharwama")}>
-            Sharwama
+              Sharwama
               <span>
-                
                 <FontAwesomeIcon icon={renderChevronIcon("sharwama")} />
               </span>
             </h2>
@@ -176,7 +179,6 @@ const Home2 = () => {
               </div>
             )}
           </div>
-         
 
           <div className="accordion-section">
             <h2 onClick={() => toggleSection("cheese")}>
@@ -195,7 +197,6 @@ const Home2 = () => {
               </div>
             )}
           </div>
-         
         </div>
       </Link>
     </div>

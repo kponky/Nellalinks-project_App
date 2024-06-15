@@ -5,7 +5,7 @@
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
   width: 100%;
-  padding-block: 15px;
+  padding-block: 8px;
   margin-block: 10px;
   border-radius: 12px;
   padding-inline: 15px;
@@ -15,6 +15,7 @@
 .content-desc{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .content-img .itemImg{
@@ -31,31 +32,33 @@
   border-radius: 15px;
 }
 
-.home-container .home-content .contents span {
+.contents span {
   background-color: #1f1f1f;
   padding-inline: 8px;
   color: #fff;
   border-radius: 15px;
   display: flex;
   align-items: center;
-  width: 130px;
+  width: 100px;
   height: 28px;
+  font-size: 12px;
+  display: flex;
+  text-align: center;
   /* /* height: 28px; */
  } 
 
 
-
 .contents h4 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   color: #1f1f1f;
   padding-block: 8px;
 } 
 
 .contents p {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 15px;
   color: #8C8C8C;
 } 
 
@@ -67,7 +70,7 @@
 } 
 
 .contents .price-btn p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 20px;
   color: #1f1f1f;
