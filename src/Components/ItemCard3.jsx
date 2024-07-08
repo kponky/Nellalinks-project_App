@@ -9,7 +9,6 @@ const ItemCard2 = ({ item }) => {
   const [isInCart, setIsInCart] = useState(false);
 
   useEffect(() => {
-    // Check if cartItems is available and not undefined
     if (cartItems) {
       const isItemInCart = cartItems.some(
         (cartItem) => cartItem.id === item.id
@@ -24,13 +23,12 @@ const ItemCard2 = ({ item }) => {
   };
 
   const handleRemoveFromCart = () => {
-    // Assuming removeFromCart function is defined somewhere
     removeFromCart(item.id);
     setIsInCart(false);
   };
 
   return (
-    <div className="itemCard2-container">
+    <div className="itemCard2Container">
       <div className="itemCard-img">
         <img src={item.image} alt={item.title} className="itemImg" />
       </div>

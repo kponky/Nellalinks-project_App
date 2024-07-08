@@ -7,8 +7,10 @@ import pizzaImg from "../../assets/pizza.png";
 import "../../styles/pattern-2/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import ItemCard2 from "../../Components/ItemCard2";
+// import ItemCard2 from "../../Components/ItemCard3";
 import useFetch from "../../utils/useFetch";
+import ItemCardHome2 from "../../Components/ItemCardHome2";
+import '../../styles/itemcardhome2.css'
 
 const Home2 = () => {
   const { data, loading, error } = useFetch();
@@ -66,9 +68,9 @@ const Home2 = () => {
             </h2>
             {openSection === "burgers" && (
               <div className="accordion-content">
-                <div className="accordion-card-row">
+                <div className="accordion-card">
                   {burgerItems.map((item) => (
-                    <ItemCard2 key={item?.id} item={item} />
+                    <ItemCard key={item?.id} item={item} />
                   ))}
                 </div>
               </div>

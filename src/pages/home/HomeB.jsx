@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import data from "../../../db.json";
-import itemCard2 from "../../Components/ItemCard2";
+// import itemCard3 from "../../Components/ItemCard3";
 import Search from "../../Components/Search";
 import pizzaImg from "../../assets/pizza.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -46,7 +46,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="accordaion-card2">
                   {burgerItems.map((item) => (
-                    <itemCard2
+                    <itemCard3
                       key={item?.id}
                       item={item}
                     />
@@ -74,7 +74,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {donutItems.map((item) => (
-                    <itemCard key={item?.id} item={item} />
+                    <itemCard3 key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -86,7 +86,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {burritoItems.map((item) => (
-                    <itemCard key={item?.id} item={item} />
+                    <itemCard3 key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -98,7 +98,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {cheeseItems.map((item) => (
-                    <itemCard key={item?.id} item={item} />
+                    <itemCard3 key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -110,7 +110,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {burritoItems.map((item) => (
-                    <itemCard key={item?.id} item={item} />
+                    <itemCard3 key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -122,7 +122,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {burritoItems.map((item) => (
-                    <itemCard2 key={item?.id} item={item} />
+                    <itemCard3 key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -134,7 +134,7 @@ const Home2 = () => {
               <div className="accordion-content">
                 <div className="" style={{ display: "flex" }}>
                   {burritoItems.map((item) => (
-                    <itemCard2 key={item?.id} item={item} />
+                    <itemCard3 key={item?.id} item={item} />
                   ))}
                 </div>
               </div>
