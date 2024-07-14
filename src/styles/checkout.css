@@ -1,32 +1,39 @@
-.checkout-card{
+.checkout-card {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  border-radius:   24px 24px 0px 0px;
+  border-radius: 24px 24px 0px 0px;
   width: 100%;
   /* height: 80vh; */
   padding-inline: 20px;
   padding-block: 20px;
-  background: #FFFFFF;
-  margin-bottom: 80px;
+  background: #fff;
   position: relative;
-
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 82px;
+  z-index: 99;
 }
 
 
-.checkout-card  .summary-down .summary-icon{
+.checkout-card .summary-down .summary-icon {
   display: flex;
   justify-content: space-between;
- }
+}
 
- .checkout-card  .summary-down .summary-icon h3{
+.checkout-card .summary-down .summary-icon h3 {
   font-size: 16px;
-  font-weight: 700 ;
+  font-weight: 700;
   color: #171617;
   margin-top: 20px;
 
- }
+}
 
- .checkout-card  .summary-down .summary-icon button, 
- .checkout-close .total-icon button{
+.checkout-card .summary-down .summary-icon button,
+.checkout-close .total-icon button {
   background: transparent;
   border: 1.5px solid #E8E8E8;
   border-radius: 8px;
@@ -35,16 +42,16 @@
   margin-top: 20px;
 }
 
-.checkout-card  .summary-down .summary-icon button .icon{
-font-size: 16px ;
-color: #595959;
+.checkout-card .summary-down .summary-icon button .icon {
+  font-size: 16px;
+  color: #595959;
 }
 
 
-.checkout-card .summary-down .subtotal-vat .subtotal{
+.checkout-card .summary-down .subtotal-vat .subtotal {
   display: flex;
   justify-content: space-between;
-align-items: center;
+  align-items: center;
 }
 
 .checkout-card .summary-down .subtotal-vat {
@@ -52,7 +59,7 @@ align-items: center;
 }
 
 
-.checkout-card .summary-down .subtotal-vat .subtotal h3, 
+.checkout-card .summary-down .subtotal-vat .subtotal h3,
 .checkout-card .summary-down .subtotal-vat .subtotal p {
   color: #9A9A9A;
   font-size: 16px;
@@ -62,13 +69,13 @@ align-items: center;
   margin-block: 8px;
 }
 
-.checkout-card .summary-down .orderTotal{
+.checkout-card .summary-down .orderTotal {
   display: flex;
   justify-content: space-between;
 }
 
 .checkout-card .summary-down .orderTotal h3,
-.checkout-card .summary-down .orderTotal p{
+.checkout-card .summary-down .orderTotal p {
   color: #171617;
   font-size: 16px;
   font-weight: 700;
@@ -77,7 +84,7 @@ align-items: center;
   /* margin-block: 10px; */
 }
 
-.checkout-close{
+.checkout-close {
   display: flex;
   justify-content: space-between;
   margin-block: 20px;
@@ -85,7 +92,7 @@ align-items: center;
 
 
 
-.checkout-card .checkout-close h3{
+.checkout-card .checkout-close h3 {
   color: #171617;
   font-size: 16px;
   font-weight: 700;
@@ -99,7 +106,8 @@ align-items: center;
   align-items: center;
   position: relative;
 }
-.summary-icon span{
+
+.summary-icon span {
   padding-top: 20px;
   color: #171617;
   font-size: 16px;
@@ -111,15 +119,15 @@ align-items: center;
 }
 
 
-.checkout-card .checkout-button .btn{
+.checkout-card .checkout-button .btn {
   margin-block: 20px;
   width: 100%;
-height: 54px;
-background: #1f1f1f;
-color: #fff;
-font-size: 24px;
-font-weight: 600;
-border-radius: 12px;
+  height: 54px;
+  background: #1f1f1f;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 12px;
 
 }
 
