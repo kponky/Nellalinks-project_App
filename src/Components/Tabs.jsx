@@ -1,21 +1,18 @@
 import React from "react";
-import "../styles/tabs.css";
+import "../styles/tabs.css"
 
-const Tabs = ({ categories, selectedCategory, setSelectedCategory }) => {
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
-  };
 
+const Tabs = ({ categories, setSelectedCategory, selectedCategory }) => {
   return (
     <div className="tabs-container">
       {categories.map((category, index) => (
-        <button
-          className={selectedCategory === category ? "active" : ""}
+        <div
           key={index}
-          onClick={() => handleCategoryChange(category)}
+          className={`tab ${selectedCategory === category ? "active" : ""}`}
+          onClick={() => setSelectedCategory(category)}
         >
           {category}
-        </button>
+        </div>
       ))}
     </div>
   );

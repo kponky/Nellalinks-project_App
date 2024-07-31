@@ -37,37 +37,37 @@ const Home = () => {
 
   return (
     <div className="home-container">
-    <Link  to= '/pattern-1'>
-    
+      <Link to="/pattern-1">
+        <div className="menu">
+          <h1>Menu</h1>
+        </div>
+        <Tabs
+          categories={categories}
+          setSelectedCategory={setSelectedCategory}
+          selectedCategory={selectedCategory}
+        />
+        {/*<Tabs categories={categories} setSelectedCategory={setSelectedCategory} />*/}
+        <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
-      <div className="menu">
-        <h1>Menu</h1>
-      </div>
-      <Tabs categories={categories} setSelectedCategory={setSelectedCategory} />
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-
-      <div className="scroll-btns">
-       { /*<button className="btn scrol-btn" onClick={handleScrollDown}>
+        <div className="scroll-btns">
+          {/*<button className="btn scrol-btn" onClick={handleScrollDown}>
           <FontAwesomeIcon icon={faChevronUp} />
   </button>*/}
-      </div> 
+        </div>
 
+        {/* items list*/}
 
-      
-      {/* items list*/}
-
-      <div className="home-content">
-        {Object.keys(groupedItems).map((category) => (
-          <div key={category}>
-            <h1>{category}</h1>
-            {groupedItems[category].map((item) => (
-              <ItemCard key={item.id} item={item} />
-            ))}
-          </div>
-        ))}
-      </div>
+        <div className="home-content">
+          {Object.keys(groupedItems).map((category) => (
+            <div key={category}>
+              <h1>{category}</h1>
+              {groupedItems[category].map((item) => (
+                <ItemCard key={item.id} item={item} />
+              ))}
+            </div>
+          ))}
+        </div>
       </Link>
-      
     </div>
   );
 };
